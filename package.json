@@ -1,0 +1,14 @@
+{
+  "name": "node-img4tool",
+  "version": "0.1.0",
+  "description": "Node.js wrapper for img4tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "1Conan",
+  "license": "MIT",
+  "dependencies": {
+    "shell-escape": "^0.2.0"
+  }
+}
