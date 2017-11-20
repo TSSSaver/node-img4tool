@@ -84,7 +84,7 @@ module.exports = class {
         })
         
         return {
-            sucess: true,
+            success: true,
             data: {
                 tags: obj,
             }
