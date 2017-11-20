@@ -64,7 +64,7 @@ Same as `./img4tool -a -s (shsh2 file`)
 Output: 
 ```json
 { 
-    "sucess": true,
+    "success": true,
     "data": { 
         "tags": { 
             "aopf": "[Object]",
