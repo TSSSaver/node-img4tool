@@ -132,7 +132,7 @@ module.exports = class {
         const generator = /\[OK\] verified generator "([0-9a-fx]+)" to be valid for BNCH "[0-9a-f]+"$/gm.exec(stdout)[1]
         const buildNumber = /^BuildNumber : ([0-9A-F]+)$/gm.exec(stdout)[1]
         const buildTrain = /^BuildTrain : ([A-Za-z]+)$/gm.exec(stdout)[1]
-        const deviceClass = /^DeviceClass : ([A-Za-z0-9]+)$/gm.exec(stdout)[1]
+        const boardConfig = /^DeviceClass : ([A-Za-z0-9]+)$/gm.exec(stdout)[1]
         const restoreBehavior = /^RestoreBehavior : ([A-Za-z]+)$/gm.exec(stdout)[1]
         const variant = /^Variant : (.+)$/gm.exec(stdout)[1]
         const valid = stdout.match(/\[IMG4TOOL\] file is valid!/g) !== null
@@ -148,7 +148,7 @@ module.exports = class {
                 generator,
                 buildNumber,
                 buildTrain,
-                deviceClass,
+                boardConfig,
                 restoreBehavior,
                 variant,
                 valid,
