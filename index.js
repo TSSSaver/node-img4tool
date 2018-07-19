@@ -15,7 +15,9 @@ module.exports = class {
      * Path to buildmanifest files. (Folder should follow this structure)
      * (deviceId)/(iOSVersion)/(BuildNumber)/BuildManifest.plist
      */
-    constructor(bin = './img4tool_linux', bmPath = './bm') {
+    constructor(options = {}) {
+        if(options.bin === undefined) throw new Error(`options.bin doesn't exist`)
+        if(options.bmPath === undefined) throw new Error(`options.bmPath doesn't exist`)
         if(!fs.existsSync(bin)) throw `${bin} doesn't exist!`
         if(!fs.existsSync(bmPath)) throw `${bmPath} doesn't exist!`
         this.bin = bin
