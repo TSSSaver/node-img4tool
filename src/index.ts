@@ -8,6 +8,7 @@ export default class {
     if (!existsSync(options.bmPath)) throw new Error(`${options.bmPath} doesn't exist`);
   }
 }
+
 function exec(bin: string, argument: string[]): Promise<{stdout: string, stderr: string}> {
   const args = shellEscape(argument);
   const command: string = `${bin} ${args}`;
