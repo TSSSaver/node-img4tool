@@ -2,7 +2,8 @@
   "name": "node-img4tool",
   "version": "0.1.1",
   "description": "Node.js wrapper for img4tool",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
